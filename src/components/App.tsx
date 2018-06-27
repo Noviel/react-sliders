@@ -51,8 +51,20 @@ export class UnconnectedApp extends React.Component<IAppProps> {
           ))}
         <br />
         Load new elements:
-        <button onClick={() => dispatch(fetchData(int(1, 9)))}>1-9</button>
-        <button onClick={() => dispatch(fetchData(count))}>{count}</button>
+        <br />
+        <button
+          className={styles.button}
+          style={{ marginRight: 4 }}
+          onClick={() => dispatch(fetchData(int(1, 9)))}
+        >
+          1-9
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(fetchData(count))}
+        >
+          {count}
+        </button>
       </div>
     );
   }
