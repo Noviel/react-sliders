@@ -1,0 +1,7 @@
+{
+  "extends": "dqnt",
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn"
+  }
+}
